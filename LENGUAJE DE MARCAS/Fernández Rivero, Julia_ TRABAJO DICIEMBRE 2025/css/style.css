@@ -146,14 +146,12 @@ nav ul li a:hover {
     box-shadow: 0 0 15px rgba(177, 0, 255, 0.6);
 }
 
-#productos article p:last-child {
+#productos article p:last-child { /*última línea de artículos, que sería el precio*/
     font-weight: bold;
     color: #e600ff;
 }
 
-/*========================
-  CONTACTO
-=========================*/
+/*CONTACTO*/
 #contacto h2 {
     text-align: center;
 }
