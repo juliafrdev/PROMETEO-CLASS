@@ -1,0 +1,254 @@
+/*paleta colores*/
+/*Fondo oscuro: #0f0f14
+Morado neón principal: #b100ff
+Morado suave: #7a1cff
+Hover neoón: #e600ff
+Texto principal: #eaeaea
+Texto secundario: #b5b5b5
+Cajas oscuras: #181822*/
+
+/*CUERPO GENERAL*/
+body {
+    margin: 0;
+    font-family: 'Open Sans', Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #0f0f14;
+    color: #eaeaea;
+}
+
+/*TÍTULOS*/
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin: 15px;
+    color: #b100ff;
+    text-shadow: 0 0 6px rgba(177, 0, 255, 0.6); /*plantilla neón*/
+}
+
+p {
+    margin: 15px;
+    color: #b5b5b5;
+}
+
+/*INICIO*/
+#inicio {
+    max-width: 900px;
+    margin: 60px auto;
+    text-align: center;
+    background-color: #181822;
+    padding: 40px 20px;
+    border-radius: 10px;
+}
+
+#inicio p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+/*CABECERA*/
+header {
+    background: linear-gradient(135deg, #1a0026, #0f0f14);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 30px;
+    border-bottom: 1px solid #7a1cff;
+}
+
+header img {
+    width: 160px;
+    height: auto;
+}
+
+.header-text h1 {
+    margin: 0;
+    font-size: 2.1rem;
+}
+
+.header-text p {
+    margin: 4px 0 0;
+    font-size: 0.95rem;
+    color: #e600ff;
+}
+
+
+/*NAVEGACIÓN*/
+nav {
+    position: sticky;
+    top: 0;
+    background-color: #0f0f14;
+    border-bottom: 1px solid #7a1cff;
+    text-align: center;
+    z-index: 1000;
+}
+
+nav ul {
+    margin: 0;
+    padding: 10px 0;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #eaeaea;
+    text-decoration: none; /* quita subrayado */
+    font-weight: 600;
+    padding: 5px 8px;
+    transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+
+nav ul li a:hover {
+    color: #e600ff;
+    text-shadow: 0 0 6px rgba(230, 0, 255, 0.8);
+}
+
+/*DESTACADO*/
+#destacado {
+    background-color: #181822;
+    padding: 25px;
+    border: 2px solid #7a1cff;
+    margin: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(122, 28, 255, 0.4);
+}
+
+/*PRODUCTOS*/
+#productos div {
+    margin: 15px;
+    display: flex;
+    gap: 20px;
+}
+
+#productos article img {
+    width: 100%;
+    max-width: 230px;
+    height: auto;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+#productos article {
+    background-color: #181822;
+    border: 1px solid #7a1cff;
+    padding: 10px;
+    border-radius: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#productos article:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 15px rgba(177, 0, 255, 0.6);
+}
+
+#productos article p:last-child {
+    font-weight: bold;
+    color: #e600ff;
+}
+
+/*========================
+  CONTACTO
+=========================*/
+#contacto h2 {
+    text-align: center;
+}
+
+#contacto form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #181822;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #7a1cff;
+}
+
+#contacto label {
+    display: block;
+    margin-bottom: 5px;
+    color: #eaeaea;
+}
+
+#contacto label {
+    display: block;
+    margin-bottom: 5px;
+    color: #eaeaea;
+}
+
+#contacto input,
+#contacto select,
+#contacto textarea {
+    width: 100%;
+    padding: 8px;
+    background-color: #0f0f14;
+    border: 1px solid #7a1cff;
+    color: #eaeaea;
+    border-radius: 4px;
+}
+
+#contacto button {
+    background-color: #b100ff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#contacto button:hover {
+    background-color: #e600ff;
+}
+
+/*SOBRE NOSOTROS*/
+#nosotros {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 25px;
+    background-color: #181822;
+    border-left: 5px solid #b100ff;
+    border-radius: 8px;
+}
+
+/*FOOTER*/
+footer {
+    background-color: #0f0f14;
+    color: #b5b5b5;
+    padding: 20px;
+    text-align: center;
+    font-size: smaller;
+    border-top: 2px solid #7a1cff;
+    margin-top: 50px;
+}
+
+/*SCROLL*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0f0f14; /*ESTO ES EL FONDO DE LA BARRA*/
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #7a1cff; /*ESTO ES LA BARRA*/
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #e600ff;
+}
+
+/*ciruela*/
+.ciruela-fija {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: auto;
+    opacity: 1.0;
+    z-index: 999;
+}
