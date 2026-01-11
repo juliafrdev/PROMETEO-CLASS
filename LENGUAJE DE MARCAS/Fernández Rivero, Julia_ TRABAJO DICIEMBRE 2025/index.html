@@ -12,8 +12,10 @@
 
 <body>
 
+<a href="#contenido" class="skip-link">Saltar al contenido</a>
+
 <header>
-    <img src="https://i.ibb.co/HftbSwhn/logo-png-gallumbos-ciruelo-1.png[" alt="Logo de Gallumbos Ciruelo">
+    <img src="https://i.ibb.co/HftbSwhn/logo-png-gallumbos-ciruelo-1.png" alt="Logo de Gallumbos Ciruelo">
     <div class="header-text">
         <h1>Gallumbos Ciruelo</h1>
         <p>Ropa interior con más dignidad que muchos lunes</p>
@@ -24,12 +26,19 @@
     <ul>
         <li><a href="#inicio">Inicio</a></li>
         <li><a href="#productos">Productos</a></li>
+        <li><a href="#resenas">Reseñas</a></li>
         <li><a href="#nosotros">Sobre nosotros</a></li>
+        <li><a href="#faq">FAQ</a></li>
         <li><a href="#contacto">Contacto</a></li>
     </ul>
 </nav>
 
-<main>
+
+<div class="barra-marca">
+    <p>🚚 Envíos 24/48h · 🌿 Algodón 100% · 🇪🇸 Hecho en España</p>
+</div>
+
+<main id="contenido">
 
 <section id="inicio">
     <h2>Bienvenido a Gallumbos Ciruelo</h2>
@@ -43,6 +52,11 @@
         Porque creemos que si el día empieza mal, al menos
         <strong>el gallumbo no debería ser el problema</strong>.
     </p>
+
+    <div class="cta">
+        <a href="#productos" class="btn btn-principal">Ver productos</a>
+        <a href="#contacto" class="btn btn-secundario">Tengo una duda</a>
+    </div>
 </section>
 
 <section id="productos">
@@ -50,33 +64,87 @@
 
     <div>
         <article>
-            <img src="https://i.ibb.co/1YbprTsh/NORMALES2.png" alt="Gallumbo cotidiano">
+            <span class="badge">Top ventas</span>
+            <img src="https://i.ibb.co/1YbprTsh/NORMALES2.png" alt="Gallumbo cotidiano" loading="lazy">
             <h3>Gallumbo Cotidiano</h3>
             <p>
                 “Para ir a trabajar, al bar o a conquistar el sofá”.
                 El gallumbo de confianza para sobrevivir al día a día.
             </p>
-            <p>12,99 €</p>
+            <p class="precio">12,99 €</p>
+
+            <details class="detalles-producto">
+                <summary class="btn btn-principal btn-detalles">Ver detalles</summary>
+                <div class="contenido-detalles">
+                    <p><strong>Tejido:</strong> Algodón suave</p>
+                    <p><strong>Ajuste:</strong> Cómodo y estable</p>
+                    <p><strong>Ideal para:</strong> Uso diario</p>
+                </div>
+            </details>
         </article>
 
         <article>
-            <img src="https://i.ibb.co/bgxjcBQf/SPORT1.png" alt="Gallumbo sport">
+            <span class="badge badge-soft">Nuevo</span>
+            <img src="https://i.ibb.co/bgxjcBQf/SPORT1.png" alt="Gallumbo sport" loading="lazy">
             <h3>Gallumbo Sport</h3>
             <p>
                 “Ni se sube, ni se baja, ni molesta”.
                 Diseñado para moverte sin pensar en lo que llevas puesto.
             </p>
-            <p>12,99 €</p>
+            <p class="precio">12,99 €</p>
+
+            <details class="detalles-producto">
+                <summary class="btn btn-principal btn-detalles">Ver detalles</summary>
+                <div class="contenido-detalles">
+                    <p><strong>Tejido:</strong> Transpirable</p>
+                    <p><strong>Costuras:</strong> Reforzadas</p>
+                    <p><strong>Ideal para:</strong> Deporte y movimiento</p>
+                </div>
+            </details>
         </article>
 
         <article>
-            <img src="https://i.ibb.co/zhnCp4MF/PREMIUM1.png" alt="Gallumbo premium">
+            <span class="badge badge-premium">Premium</span>
+            <img src="https://i.ibb.co/zhnCp4MF/PREMIUM1.png" alt="Gallumbo premium" loading="lazy">
             <h3>Gallumbo Premium</h3>
             <p>
                 “Porque tu paquete también merece respeto”.
                 Algodón 100% natural y ajuste que roza la perfección.
             </p>
-            <p>16,99 €</p>
+            <p class="precio">16,99 €</p>
+
+            <details class="detalles-producto">
+                <summary class="btn btn-principal btn-detalles">Ver detalles</summary>
+                <div class="contenido-detalles">
+                    <p><strong>Tejido:</strong> Algodón 100% natural</p>
+                    <p><strong>Acabado:</strong> Suave premium</p>
+                    <p><strong>Ideal para:</strong> Días importantes</p>
+                </div>
+            </details>
+        </article>
+    </div>
+</section>
+
+<section id="resenas">
+    <h2>Lo que dice la gente</h2>
+
+    <div class="resenas-grid">
+        <article class="resena-card">
+            <p class="estrellas">★★★★★</p>
+            <p class="resena-texto">“No sabía que se podía vivir así de tranquilo. Ajuste perfecto y cero dramas.”</p>
+            <p class="resena-autor">— Dani, superviviente de lunes</p>
+        </article>
+
+        <article class="resena-card">
+            <p class="estrellas">★★★★★</p>
+            <p class="resena-texto">“El Sport es otra liga. Corro, salto, y el gallumbo ni se inmuta.”</p>
+            <p class="resena-autor">— Marcos, atleta del sofá y del asfalto</p>
+        </article>
+
+        <article class="resena-card">
+            <p class="estrellas">★★★★☆</p>
+            <p class="resena-texto">“El Premium es comodísimo. Le quito una estrella porque ahora no quiero ponerme otros.”</p>
+            <p class="resena-autor">— Javi, exigente con su paquete</p>
         </article>
     </div>
 </section>
@@ -103,9 +171,56 @@
 
 <section id="destacado">
     <h2>¿Por qué Gallumbos Ciruelo?</h2>
-    <p><strong>Algodón 100% natural</strong> (de verdad, no de marketing)</p>
-    <p>Diseño ergonómico pensado para humanos reales</p>
-    <p>Fabricado en España, con orgullo y sin rodeos</p>
+
+    <div class="destacado-grid">
+        <article class="destacado-card">
+            <h3>Calidad sin cuentos</h3>
+            <p><strong>Algodón 100% natural</strong> (de verdad, no de marketing)</p>
+            <p>Costuras que aguantan tu día, tus prisas y tus lavadoras</p>
+            <p>Diseño ergonómico pensado para humanos reales</p>
+        </article>
+
+        <article class="destacado-card">
+            <h3>Dignidad garantizada</h3>
+            <p>Fabricado en España, con orgullo y sin rodeos</p>
+            <p>Se mantiene en su sitio: <strong>ni se sube, ni se gira, ni traiciona</strong></p>
+            <p>Porque si el gallumbo falla… el día también</p>
+        </article>
+    </div>
+</section>
+
+<section id="faq">
+    <h2>Preguntas frecuentes</h2>
+
+    <details class="faq-item">
+        <summary>¿Los gallumbos encogen al lavarlos?</summary>
+        <p>
+            No. Están pensados para lavadoras reales. Si sigues las instrucciones básicas,
+            se quedan como el primer día.
+        </p>
+    </details>
+
+    <details class="faq-item">
+        <summary>¿Dónde se fabrican?</summary>
+        <p>
+            En España, con materiales bien elegidos y sin rodeos.
+        </p>
+    </details>
+
+    <details class="faq-item">
+        <summary>¿Qué diferencia hay entre el normal y el Premium?</summary>
+        <p>
+            El Premium usa algodón 100% natural y un acabado más suave.
+            Es para quien quiere un extra de comodidad.
+        </p>
+    </details>
+
+    <details class="faq-item">
+        <summary>¿Puedo usarlos para hacer deporte?</summary>
+        <p>
+            Para eso está el Sport: transpirable y pensado para moverte sin preocuparte.
+        </p>
+    </details>
 </section>
 
 <section id="contacto">
@@ -113,13 +228,13 @@
 
     <form>
         <div>
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre">
+            <label for="nombre">Nombre: *</label>
+            <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
         </div>
 
         <div>
-            <label for="email">Email:</label>
-            <input type="text" id="email" name="email">
+            <label for="email">Email: *</label>
+            <input type="email" id="email" name="email" required placeholder="tucorreo@ejemplo.com">
         </div>
 
         <div>
@@ -132,11 +247,12 @@
         </div>
 
         <div>
-            <label for="mensaje">Mensaje</label>
-            <textarea name="mensaje" id="mensaje"></textarea>
+            <label for="mensaje">Mensaje *</label>
+            <textarea name="mensaje" id="mensaje" rows="5" required placeholder="Cuéntanos tu duda (con dignidad)"></textarea>
         </div>
 
         <button type="submit">Enviar mensaje</button>
+        <p class="nota-form">Los campos marcados con * son obligatorios. Prometemos responder con dignidad.</p>
     </form>
 </section>
 
@@ -149,7 +265,9 @@
 <img 
     src="https://i.ibb.co/kV4rBW1p/Chat-GPT-Image-22-dic-2025-21-00-28-removebg-preview-1.png" 
     alt="Ciruela decorativa"
-    class="ciruela-fija">
+    class="ciruela-fija"
+    loading="lazy">
 
 </body>
 </html>
+
