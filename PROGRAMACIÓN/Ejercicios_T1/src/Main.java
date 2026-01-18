@@ -60,6 +60,20 @@ public class Main {
         System.out.println("El área del rectángulo es: " + ejercicio8.areaRectangulo);
         */
 
+        /* ESTO ES LA EJECUCIÓN DEL EJERCICIO 9
+        ejercicio9 ejercicio9 = new ejercicio9();
+        System.out.println("INFORMACIÓN DEL PRODUCTO");
+        System.out.println("--------------------------");
+        System.out.println("Nombre: " + ejercicio9.nombre);
+        System.out.println("Precio: " + ejercicio9.precio + "€");
+        System.out.println("Código: " + ejercicio9.codigo);
+        System.out.println("Disponible: " + ejercicio9.disponible);
+         */
+
+        ejercicio10 ejercicio10 = new ejercicio10();
+        System.out.println("Temperatura en Celsius: " + ejercicio10.celsius);
+        System.out.println("Temperatura en Fahrenheit: " + ejercicio10.fahrenheit);
+
+    }
 
         }
-    }
