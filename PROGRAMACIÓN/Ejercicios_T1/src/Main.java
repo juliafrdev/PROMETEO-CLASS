@@ -1,5 +1,3 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
 
@@ -18,9 +16,14 @@ public class Main {
         System.out.println("Puntuación final: " + ejercicio2.puntuacionfinal);
         */
 
+        /* ESTO ES LA EJECUCIÓN DEL EJERCICIO 3
         ejercicio3 ejercicio3 = new ejercicio3();
-        System.out.println("Nombre: " + ejercicio3.nombre);
-
+        System.out.println("Nombre: " + ejercicio3.nombre + " - Tipo: String");
+        System.out.println("Edad: " + ejercicio3.edad + " - Tipo: int");
+        System.out.println("¿Es estudiante? " + ejercicio3.estudiante + " - Tipo: boolean");
+        System.out.println("Altura: " + ejercicio3.altura + " - Tipo: double");
+        System.out.println("Inicial: " + ejercicio3.inicial + " - Tipo: char");
+        */
 
         }
     }
